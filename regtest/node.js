@@ -53,7 +53,7 @@ describe('Node Functionality', function() {
             config: {
               spawn: {
                 datadir: datadir,
-                exec: path.resolve(__dirname, '../bin/zcashd')
+                exec: path.resolve(__dirname, '../bin/komodod')
               }
             }
           }
@@ -77,7 +77,7 @@ describe('Node Functionality', function() {
         client = new BitcoinRPC({
           protocol: 'http',
           host: '127.0.0.1',
-          port: 30331,
+          port: 7771,
           user: 'bitcoin',
           pass: 'local321',
           rejectUnauthorized: false
